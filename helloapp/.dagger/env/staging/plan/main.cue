@@ -9,7 +9,6 @@ import (
 
 repo: dagger.#Artifact
 
-
 hello: {
 
 	dir: dagger.#Artifact
@@ -28,7 +27,6 @@ hello: {
 
 	message: f.read.data
 }
-
 
 // Website
 web: {
