@@ -5,12 +5,10 @@ import (
 	"dagger.io/gcp/gcr"
 )
 
-
 redis: {
 	host: string
 	port: int | *36379
 }
-
 
 // Vote service
 vote: {
@@ -47,7 +45,7 @@ vote: {
 		// Creates an ECS Task + Service + deploy via Cloudformation
 		app: #ECSApp & {
 			awsConfig:      infra.awsConfig
-			"slug":         appName
+			slug:           appName
 			clusterName:    infra.ecsClusterName
 			vpcId:          infra.vpcId
 			elbListenerArn: infra.elbListenerArn
@@ -83,9 +81,9 @@ vote: {
 
 		app: #KubeApp & {
 			gcpConfig:   infra.gcpConfig
-			"name":      appName
+			name:        appName
 			clusterName: infra.gkeClusterName
-			"image":     gcrImage.ref
+			image:       gcrImage.ref
 			port:        80
 			domain:      "\(appName).gke.microstaging.io"
 			environment: {

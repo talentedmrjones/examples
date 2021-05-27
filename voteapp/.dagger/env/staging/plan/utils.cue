@@ -30,11 +30,13 @@ import (
 		#up: [
 			op.#Load & {from: contents},
 			op.#DockerLogin & {
-				target:     repo
-				"username": auth.username
-				"secret":   auth.secret
+				target:   repo
+				username: auth.username
+				secret:   auth.secret
 			},
-			op.#PushContainer & {"ref": "\(repo):\(tag)"},
+			op.#PushContainer & {
+				ref: "\(repo):\(tag)"
+			},
 			op.#Export & {
 				source: "/dagger/image_ref"
 				format: "string"
