@@ -13,7 +13,7 @@ inputs:
     infra.elbListenerArn:
         text: arn:aws:elasticloadbalancing:us-east-1:125635003186:listener/app/bl-ec-ECSAL-OSYI03K07BCO/3c2d3e97468bde5b/d02ac91cc007e34e
     infra.gcpConfig.project:
-        secret: ENC[AES256_GCM,data:IQ6No7GLUS2E,iv:Nf55ejK5FyVqRBzACSfKVohMWQtUZBbhsSSyS61IMxM=,tag:rN2T4NvDSbK3cW6lDavPvg==,type:str]
+        text: dagger-ci
     infra.gcpConfig.region:
         text: us-west2-a
     infra.gcpConfig.serviceKey:
@@ -31,7 +31,6 @@ inputs:
     repo:
         dir:
             path: .
-            include: []
     vote.appName:
         text: acme-vote
 sops:
@@ -49,8 +48,8 @@ sops:
             SWE4cExHQTJmT2hLR2xXWWc0OWx4WEUKWiI8MZN957VCtixJrn8jSlz5p9pC+lmx
             04GX4Mx8n+NNPtQ3NiaOjtp8Rro2tWw7X4/Y+tlM9l6ys2VMzfgXvQ==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2021-05-26T20:22:07Z"
-    mac: ENC[AES256_GCM,data:WeeLTbo879seGCYjQ3N8PBsgp7cRDZf1hsxP6A8L4BWyDAFDyDlezRfoNCvxm8e4nMAsdrs4MHFpSFP82QM4uwKZqeRcSIUjddaPCLv/31hXTZ8qEF3l/osqZZh6uI8lc7w/CwPWdHV65EHWeIr6YhRfP9Xvm1RxFn23md7ieys=,iv:n7/n9Gp9YlhhdW/JBS83VroNKUsFCM9vlAGPoZeJR6c=,tag:rwigfwJA1qs6QFFQwQYy5Q==,type:str]
+    lastmodified: "2021-06-02T15:31:49Z"
+    mac: ENC[AES256_GCM,data:dcdQ450S9GVtJVwdDemRuIR6Vnhw6gh/KBRPh7dUGev5c0ekCsJW3WjtEFnQaESn4zOApz9nR+hjjKuD/WPpDMR7XsgfIPmD6rZalUAYIjqsnLM+4Th08x0FSE0Hza7Ip3faagx0z/X267qL9BiCA5K/XfuqXNclJu4jFwAQDdw=,iv:V4EkULvF5weon9O6LAa0M00mWCxZkOU64xS1U0PHIVc=,tag:ELWhBK9ofCdp0KA+9sa2Gw==,type:str]
     pgp: []
     encrypted_suffix: secret
     version: 3.7.1
