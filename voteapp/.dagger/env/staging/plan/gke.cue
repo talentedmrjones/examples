@@ -95,7 +95,7 @@ import (
 	deploy: kubernetes.#Apply & {
 		kubeconfig:   auth.kubeconfig
 		namespace:    "dagger-example"
-		sourceInline: strings.Join([
+		manifest: strings.Join([
 				yaml.Marshal(resources.deployment),
 				yaml.Marshal(resources.service),
 				yaml.Marshal(resources.ingress),
