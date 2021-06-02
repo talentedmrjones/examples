@@ -13,18 +13,18 @@ redis: {
 // Vote service
 vote: {
 	// URL of the vote service
-	url: string
+	url: string @dagger(output)
 
 	// Identifier used by infrastructure setup
-	appName: string | *"acme-vote"
+	appName: string | *"acme-vote" @dagger(input)
 
-	provider: *"aws" | "google"
+	provider: *"aws" | "google" @dagger(input)
 
 	// Load portable container config from docker compose
 	ctr: compose.containers.vote
 
 	if provider == "aws" {
-		url: "https://\(hostname)"
+		url: "https://\(hostname)" @dagger(output)
 
 		hostname: "\(appName).acme-764-api.microstaging.io"
 
