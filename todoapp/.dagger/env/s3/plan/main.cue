@@ -15,7 +15,7 @@ app: yarn.#Package & {
 }
 
 // S3 Bucket name has a default value but can be overriden
-bucketName: *"todo.microstaging.io" | string @dagger(input)
+bucketName: *"todoapp.microstaging.io" | string @dagger(input)
 
 // Host the application on an S3 bucket
 s3bucket: s3.#Sync & {
