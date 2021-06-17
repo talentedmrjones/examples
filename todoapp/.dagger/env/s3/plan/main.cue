@@ -18,7 +18,8 @@ app: yarn.#Package & {
 bucketName: *"todoapp.microstaging.io" | string @dagger(input)
 
 // Host the application on an S3 bucket
-s3bucket: s3.#Sync & {
+s3bucket: s3.#Object & {
+	always: true
 	source: app.build
 	target: "s3://\(bucketName)/\(appName)/"
 }
