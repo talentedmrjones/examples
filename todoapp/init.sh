@@ -18,7 +18,7 @@ grep -q \
         exit 0
     }
 
-cat > "$KEY_FILE" <<- EOF
+cat >> "$KEY_FILE" <<- EOF
 # dagger/examples
 # public key: age1gunf55cd2v30j76w4arxgmzks48v2a56pdw0vtn2j2ax6q2yp3wqgqlzxm
 AGE-SECRET-KEY-1E7U8T98V5JTS7CWEWC6CN2A4ZP0H2SE3UTTQV4WZZ8JW26JC23GSEK76PG
