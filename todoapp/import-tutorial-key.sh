@@ -7,7 +7,7 @@ KEY_FILE="$HOME/.config/dagger/keys.txt"
 # check if dagger is already initialized
 [ -f "$KEY_FILE" ] || {
     # Any dagger command inits the default key
-    dagger version >/dev/null
+    dagger help >/dev/null
 }
 
 # Check if the key has been already set
