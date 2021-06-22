@@ -3,6 +3,7 @@
 set -eu
 
 KEY_FILE="$HOME/.config/dagger/keys.txt"
+mkdir -p "$(dirname "${KEY_FILE}")"
 
 # check if dagger is already initialized
 [ -f "$KEY_FILE" ] || {
@@ -13,7 +14,7 @@ KEY_FILE="$HOME/.config/dagger/keys.txt"
 # Check if the key has been already set
 grep -q \
     age1gunf55cd2v30j76w4arxgmzks48v2a56pdw0vtn2j2ax6q2yp3wqgqlzxm \
-    "$KEY_FILE" && {
+    "$KEY_FILE" 2>/dev/null && {
         echo "Key already initialized"
         exit 0
     }
