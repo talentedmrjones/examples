@@ -3,9 +3,9 @@ package main
 import (
 	"encoding/json"
 
-	"dagger.io/aws"
-	// "dagger.io/aws/elb"
-	"dagger.io/aws/cloudformation"
+	"alpha.dagger.io/aws"
+	// "alpha.dagger.io/aws/elb"
+	"alpha.dagger.io/aws/cloudformation"
 )
 
 #ECSApp: {

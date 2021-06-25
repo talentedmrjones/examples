@@ -4,10 +4,10 @@ import (
 	"encoding/yaml"
 	"strings"
 
-	"dagger.io/gcp"
-	"dagger.io/gcp/gke"
+	"alpha.dagger.io/gcp"
+	"alpha.dagger.io/gcp/gke"
 
-	"dagger.io/kubernetes"
+	"alpha.dagger.io/kubernetes"
 )
 
 #KubeApp: {

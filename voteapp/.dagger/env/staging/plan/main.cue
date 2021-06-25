@@ -1,7 +1,7 @@
 package main
 
 import (
-	"dagger.io/dagger"
+	"alpha.dagger.io/dagger"
 )
 
 repo: dagger.#Artifact @dagger(input)

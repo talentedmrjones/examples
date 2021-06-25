@@ -1,9 +1,9 @@
 package main
 
 import (
-	"dagger.io/dagger"
-	"dagger.io/aws/s3"
-	"dagger.io/js/yarn"
+	"alpha.dagger.io/dagger"
+	"alpha.dagger.io/aws/s3"
+	"alpha.dagger.io/js/yarn"
 )
 
 // Source code of the sample application
