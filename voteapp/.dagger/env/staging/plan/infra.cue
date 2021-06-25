@@ -1,8 +1,8 @@
 package main
 
 import (
-	"dagger.io/gcp"
-	"dagger.io/aws"
+	"alpha.dagger.io/gcp"
+	"alpha.dagger.io/aws"
 
 )
 

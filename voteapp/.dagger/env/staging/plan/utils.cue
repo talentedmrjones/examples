@@ -3,10 +3,10 @@ package main
 import (
 	"encoding/yaml"
 
-	"dagger.io/dagger/op"
-	"dagger.io/dagger"
-	"dagger.io/os"
-	"dagger.io/docker"
+	"alpha.dagger.io/dagger/op"
+	"alpha.dagger.io/dagger"
+	"alpha.dagger.io/os"
+	"alpha.dagger.io/docker"
 )
 
 // Push a docker image

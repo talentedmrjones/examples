@@ -1,10 +1,10 @@
 package main
 
 import (
-	"dagger.io/dagger"
-	"dagger.io/aws/s3"
-	"dagger.io/netlify"
-	"dagger.io/os"
+	"alpha.dagger.io/dagger"
+	"alpha.dagger.io/aws/s3"
+	"alpha.dagger.io/netlify"
+	"alpha.dagger.io/os"
 )
 
 repo: dagger.#Artifact @dagger(input)

@@ -1,8 +1,8 @@
 package main
 
 import (
-	"dagger.io/aws/ecr"
-	"dagger.io/gcp/gcr"
+	"alpha.dagger.io/aws/ecr"
+	"alpha.dagger.io/gcp/gcr"
 )
 
 redis: {
