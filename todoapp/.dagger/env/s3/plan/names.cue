@@ -17,7 +17,7 @@ funnyName: (os.#File & {
 		command: "/app/main > /out"
 	}
 	path: "/out"
-}).read.data
+}).contents
 
 // Application Name
 appName: strings.Trim(funnyName, "\n") @dagger(output)
