@@ -1,3 +1,4 @@
+# syntax=docker/dockerfile:experimental
 FROM node:12-alpine as build
 
 RUN apk update && apk upgrade && \
