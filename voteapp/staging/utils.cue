@@ -61,7 +61,7 @@ import (
 		...
 	} // FIXME: enforce full docker compose spec
 
-	spec: yaml.Unmarshal(file.read.data)
+	spec: yaml.Unmarshal(file.contents)
 
 	services: spec.services
 
