@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: todoapp
-          image: public.ecr.aws/j7f8d3t2/todoapp@sha256:6224c86267a798e98de9bfe5f98eaa3f55a1adfcd6757acc59e593f2ccdb37f2
+          image: public.ecr.aws/j7f8d3t2/todoapp
           imagePullPolicy: Always
           ports:
             - containerPort: 80
