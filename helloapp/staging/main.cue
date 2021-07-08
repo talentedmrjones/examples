@@ -25,7 +25,7 @@ hello: {
 		path: "/tmp/out"
 	}
 
-	message: f.read.data @dagger(output)
+	message: f.contents @dagger(output)
 }
 
 // Website
