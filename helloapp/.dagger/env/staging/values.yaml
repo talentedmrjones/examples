@@ -1,14 +1,14 @@
+plan:
+    package: ./staging
 name: staging
 inputs:
     hello.dir:
         git:
             remote: https://github.com/cuelang/cue
             ref: master
-            dir: ""
     repo:
         dir:
             path: .
-            include: []
     web.bucket.config.accessKey:
         secret: ENC[AES256_GCM,data:iRCQGhZQhNVwl2x/2zsUCi9RIoU=,iv:Dgtce5puzSskJn6sPo5bTD36KDgQTyM/uw2gV7Yht18=,tag:YO6Vx0PE/IgaMB5PjAtwRg==,type:str]
     web.bucket.config.region:
@@ -38,8 +38,8 @@ sops:
             eXYvVmxEeUF6ektaVlJGQTBrZUQ0UEEKqXU9psIcz0eWwqwSemNCzhFroJP28F4C
             ADPxVMU/HE16diGcIrWGIOsz2D3pjyaqZ8+1E/PRom6mB8jiLMtCZw==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2021-05-26T21:53:34Z"
-    mac: ENC[AES256_GCM,data:w7nCinJ60EjdceEDFQ26JElcf+/xsqqXdqmIgWVFbrgDtzDxAivfoyO1VjrM567719HCCe+KI4HnqWMIDJQGAP7IcWDIFnDCs0RkDgYQUTP6CCM/zzo65coftdODW0HyllqT4TtDr07mYuN9jXSqOzmSPvPRnbX2aHicohlz3MA=,iv:/7+nx11TX6fHzYPuToh6nqDoOHRJ8h2RYfbMqzzTwIo=,tag:w60LjeSbcBNhIeRu/ztcxQ==,type:str]
+    lastmodified: "2021-07-08T10:28:16Z"
+    mac: ENC[AES256_GCM,data:VcLKlk2Sb2AD83zO2xwfE0CzaNsCIO0cO/lJDWGxlObyyuLVTZZwXfP5MydF930T2oIzPKDe6q+noGT3J5hmOxEMf2rp7a82aCINDL/orzJNMnNTThz+Rmwmu/aYOOVgF+8nKQkrMBUip5yE18DSRclVyAiv6ryAGzBI3Lk0m2o=,iv:9dX120EmRJiNxE5ofLxHftkNXVU/nmqGkhaxc7ZVM/k=,tag:X5wnT1B/EAYImBBOTj2eMg==,type:str]
     pgp: []
     encrypted_suffix: secret
     version: 3.7.1
