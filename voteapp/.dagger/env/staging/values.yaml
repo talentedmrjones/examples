@@ -1,5 +1,3 @@
-plan:
-    package: ./staging
 name: staging
 inputs:
     infra.awsConfig.accessKey:
@@ -50,8 +48,8 @@ sops:
             SWE4cExHQTJmT2hLR2xXWWc0OWx4WEUKWiI8MZN957VCtixJrn8jSlz5p9pC+lmx
             04GX4Mx8n+NNPtQ3NiaOjtp8Rro2tWw7X4/Y+tlM9l6ys2VMzfgXvQ==
             -----END AGE ENCRYPTED FILE-----
-    lastmodified: "2021-07-08T10:29:13Z"
-    mac: ENC[AES256_GCM,data:HvY0W/gzZhTQLLU8ubY7PM9Ow3/DE66PmizSSmyZuN/D61kyQb5pQrNnsBuNe3QI+R9B51ZfmWbTzmblyYnCkeYwbgnp98aX5+23r0TODRarrqu7lpbMqqoH0f9YrM/emTY+2pfKmyEx8umCw1oZ3HLcZGOd/v4rDfD5BexRxvE=,iv:+et9NBjsagpwv8EL8atDhM5/hjEtiVU9vj4iXgtwS5A=,tag:/ueb7G8gdPTK9XvP/uGbkg==,type:str]
+    lastmodified: "2021-06-02T15:31:49Z"
+    mac: ENC[AES256_GCM,data:dcdQ450S9GVtJVwdDemRuIR6Vnhw6gh/KBRPh7dUGev5c0ekCsJW3WjtEFnQaESn4zOApz9nR+hjjKuD/WPpDMR7XsgfIPmD6rZalUAYIjqsnLM+4Th08x0FSE0Hza7Ip3faagx0z/X267qL9BiCA5K/XfuqXNclJu4jFwAQDdw=,iv:V4EkULvF5weon9O6LAa0M00mWCxZkOU64xS1U0PHIVc=,tag:ELWhBK9ofCdp0KA+9sa2Gw==,type:str]
     pgp: []
     encrypted_suffix: secret
     version: 3.7.1

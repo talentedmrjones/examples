@@ -39,18 +39,16 @@ import (
 	//  vhost:       hostname
 	// }
 
-	params: {
-		ELBRulePriority: "4242"
-		ImageRef:        container.image
-		ELBListenerArn:  elbListenerArn
-	}
-
 	cfnStack: cloudformation.#Stack & {
-		config:     awsConfig
-		stackName:  slug
-		onFailure:  "DO_NOTHING"
-		parameters: params
-		source:     json.Marshal(template)
+		config:    awsConfig
+		stackName: slug
+		onFailure: "DO_NOTHING"
+		parameters: {
+			ELBRulePriority: "4242"
+			ImageRef:        container.image
+			ELBListenerArn:  elbListenerArn
+		}
+		source: json.Marshal(template)
 	}
 
 	template: {
