@@ -7,11 +7,11 @@ import (
 	"alpha.dagger.io/os"
 )
 
-repo: dagger.#Artifact @dagger(input)
+repo: dagger.#Artifact & dagger.#Input
 
 hello: {
 
-	dir: dagger.#Artifact @dagger(input)
+	dir: dagger.#Artifact & dagger.#Input
 
 	ctr: os.#Container & {
 		command: """
@@ -25,7 +25,7 @@ hello: {
 		path: "/tmp/out"
 	}
 
-	message: f.contents @dagger(output)
+	message: f.contents & dagger.#Output
 }
 
 // Website
@@ -35,10 +35,10 @@ web: {
 		path: "web"
 	}
 
-	url: string @dagger(output)
+	url: string & dagger.#Output
 
 	// Where to host the website?
-	provider: *"s3" | "netlify" @dagger(input)
+	provider: *"s3" | "netlify" & dagger.#Input
 
 	// Deploy to AWS S3
 	if provider == "s3" {
