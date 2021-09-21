@@ -3,6 +3,7 @@ package main
 import (
 	"strings"
 
+	"alpha.dagger.io/dagger"
 	"alpha.dagger.io/os"
 	"alpha.dagger.io/docker"
 )
@@ -20,4 +21,4 @@ funnyName: (os.#File & {
 }).contents
 
 // Application Name
-appName: strings.Trim(funnyName, "\n") @dagger(output)
+appName: strings.Trim(funnyName, "\n") & dagger.#Output
